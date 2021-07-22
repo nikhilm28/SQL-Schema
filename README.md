@@ -1,7 +1,9 @@
 # SQL-Schema
 
 The above schema contains the required database tables to store data
-of an E-Commerce Website.
+of an E-Commerce Website.  
+E-Commerce is a Web Application which is used to buy/sell the products. Using this platform Customer can buy the products from different seller with resonable price. Customer has freedom to give review or feedback about the product he has purchased from that site or customer can directly contact the seller. Customer can make payments in different types such as cash-on-delivery, net bankiing, etc. or he can avail EMI facility also.  Today E-Commerce is the biggest platform for doing business.
+
 
 # Schema Tables:
 	1) user_info 	:Contains the user/customer details, User can be "normal" user or "Admin" user
