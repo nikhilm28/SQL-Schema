@@ -32,6 +32,48 @@ CREATE TABLE product
     FOREIGN KEY(cat_id) references category(cat_id)
 );
 
+CREATE TABLE product_mobile
+(
+	mob_id		serial		NOT NULL,
+	brand		varchar(10)	NOT NULL,
+	ram		int		NOT NULL,
+	rom		int		NOT NULL,
+	cpu		varchar(30)	NOT NULL,
+	camera		int			,
+	display		float		NOT NULL,
+	product_id	int 		NOT NULL,
+	PRIMARY KEY(mob_id)			,
+	FOREIGN KEY(product_id) references product(product_id)
+);
+
+Create Table men_shirt
+(
+	shirt_id	serial		NOT NULL,
+	brand		varchar(20)	NOT NULL,
+	shirt_size	int		NOT NULL,
+	color		varchar(20)	NOT NULL,
+	collar		varchar(20)	NOT NULL,
+	sleeve		varchar(20)	NOT NULL,
+	material	varchar(20)	NOT NULL,
+	product_id 	int 		NOT NULL,
+	PRIMARY KEY(shirt_id)			,
+	FOREIGN KEY(product_id) references product(product_id)
+);
+
+CREATE TABLE ethinic_wear
+(
+	ethinicwear_id	serial		NOT NULL,
+	brand		varchar(20)	NOT NULL,
+	wear_size	int 		NOT NULL,
+	color		varchar(20)	NOT NULL,
+	material	varchar(20)	NOT NULL,
+	product_id	int 		NOT NULL,
+	PRIMARY KEY(ethinicwear_id)			,
+	FOREIGN KEY(product_id) references product(product_id)			
+);
+
+
+
 CREATE TABLE seller
 (
     seller_id	int		NOT NULL,
